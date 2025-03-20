@@ -25,6 +25,12 @@ public class AuthController {
     @Autowired
     private UserService userService;
     
+    
+    @GetMapping("/test")
+    public String test() {
+    	return "Testing Blog-Platform Application";
+    }
+    
     @PostMapping("/register")
     public ResponseEntity<Map<String, String>> register(@Valid @RequestBody User user)  {
     	try {
