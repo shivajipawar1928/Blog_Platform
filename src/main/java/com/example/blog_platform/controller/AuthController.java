@@ -28,7 +28,7 @@ public class AuthController {
     
     @GetMapping("/test")
     public String test() {
-    	return "Testing Blog-Platform Application";
+    	return "This is Blog Platform Application created by Shivaji Pawar";
     }
     
     @PostMapping("/register")
